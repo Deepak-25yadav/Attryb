@@ -3,7 +3,9 @@ const { dataBaseConnection } = require("./Configs/dataBase.js");
 require("dotenv").config();
 
 const cors = require("cors");
-
+const { userRouter } = require("./Routes/userRouter.js");
+const { oemSpecsRouter } = require("./Routes/oemSpecsRouter.js");
+const { invetoryRouter } = require("./Routes/marketPlaceInvetoryRouter.js");
 
 const app = express();
 
@@ -15,7 +17,14 @@ app.use(cors());
 
 app.use(express.json());
 
+//for user router
+app.use("/", userRouter);
 
+//for oemRouter
+app.use("/", oemSpecsRouter);
+
+//for inventory router
+app.use("/", invetoryRouter);
 
 //this index.js file is used to start the server and and so we that we can connect to database and get data
 app.listen(process.env.PORT, async () => {
