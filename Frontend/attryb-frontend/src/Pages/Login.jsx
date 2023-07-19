@@ -68,10 +68,10 @@ const Login = () => {
       boxShadow={cssStyles.boxShadow1}
     >
       <center>
-        <Image src="https://attryb.com/assets/attrybNavLog.svg" />
+        <Image src="https://www.freepnglogos.com/uploads/honda-car-png/honda-car-sydney-cars-automobile-dealership-bahrain-5.png" />
       </center>
-      <Heading fontSize={cssStyles.medium} mb={3} mt={5}>
-        Welcome Back !
+      <Heading color={"blue"} fontSize={cssStyles.medium} mb={3} mt={5}>
+        Most Welcome in Car World !!
       </Heading>
       <form onSubmit={handleLogin} action="">
         <SimpleGrid gap={4} m="auto">
@@ -81,7 +81,7 @@ const Login = () => {
               setUserData({ ...userData, email: e.target.value })
             }
             type="email"
-            placeholder="Enter Your Email"
+            placeholder="Enter Email"
           />
           <InputGroup>
             <Input
@@ -90,7 +90,8 @@ const Login = () => {
                 setUserData({ ...userData, password: e.target.value })
               }
               type={showPassword ? "text" : "password"}
-              placeholder="Enter Your Password"
+              placeholder="Enter Password"
+              color="blue"
             />
             <InputRightElement onClick={() => setShowPassword(!showPassword)}>
               {showPassword ? <ViewIcon /> : <ViewOffIcon />}
@@ -99,7 +100,7 @@ const Login = () => {
           <Text
             cursor={"pointer"}
             required
-            color="blue"
+            color="red"
             fontWeight={500}
             textDecoration={"underline"}
             onClick={() => nav("/signup")}
@@ -111,7 +112,8 @@ const Login = () => {
             loading={loading}
             type={"submit"}
             width={"full"}
-            title={"Login Now"}
+            title={"Login Now "}
+            style={{ color: "white", backgroundColor: "blue" }}
           />
         </SimpleGrid>
       </form>

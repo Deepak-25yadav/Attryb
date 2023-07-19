@@ -66,10 +66,10 @@ const Signup = () => {
       boxShadow={cssStyles.boxShadow1}
     >
       <center>
-        <Image src="https://attryb.com/assets/attrybNavLog.svg" />
+        <Image src="https://www.freepnglogos.com/uploads/honda-car-png/honda-car-honda-brv-sports-car-white-png-photo-icons-33.png" />
       </center>
-      <Heading mt={5} fontSize={cssStyles.medium} mb={3}>
-        Signup Now
+      <Heading color={"blue"} mt={5} fontSize={cssStyles.medium} mb={3}>
+        Register Now
       </Heading>
       <form onSubmit={handleSignup} action="">
         <SimpleGrid gap={4} m="auto">
@@ -78,7 +78,7 @@ const Signup = () => {
             value={userData.name}
             onChange={(e) => setUserData({ ...userData, name: e.target.value })}
             type="text"
-            placeholder="Enter Your Name"
+            placeholder="Enter Name"
           />
           <Input
             required
@@ -87,7 +87,7 @@ const Signup = () => {
               setUserData({ ...userData, email: e.target.value })
             }
             type="email"
-            placeholder="Enter Your Email"
+            placeholder="Enter Email"
           />
           <InputGroup>
             <Input
@@ -97,7 +97,7 @@ const Signup = () => {
                 setUserData({ ...userData, password: e.target.value })
               }
               type={showPassword ? "text" : "password"}
-              placeholder="Enter Your Password"
+              placeholder="Enter Password"
             />
             <InputRightElement onClick={() => setShowPassword(!showPassword)}>
               {showPassword ? <ViewIcon /> : <ViewOffIcon />}
@@ -105,18 +105,21 @@ const Signup = () => {
           </InputGroup>
           <Text
             cursor={"pointer"}
-            color="blue"
+            color="teal"
             fontWeight={500}
             textDecoration={"underline"}
             onClick={() => nav("/login")}
           >
-            Already Have an account ? Login Now
+           If you have already an account ? Login Now
           </Text>
           <ButtonMain
+         
             loading={loading}
             type={"submit"}
             width={"full"}
-            title={"Signup Now"}
+            title={"Register Now"}
+            color={"red"}
+          bg={"blue"}
           />
         </SimpleGrid>
       </form>

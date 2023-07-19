@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <>
       <SimpleGrid
-        bg="white"
+        bg="skyblue"
         p={2}
         zIndex={5}
         width={"100%"}
@@ -52,43 +52,43 @@ const Navbar = () => {
         onClick={()=>nav("/")}
           borderRadius={5}
           width={"70px"}
-          src="https://media.sketchfab.com/models/14098492e1ba4cd1a18c977a30689d4b/thumbnails/06095ddc24a04bbc967a8186019327ac/8bef94edf07b4bbbbc5b1bddfd8277c1.jpeg"
+          src="https://attryb.com/assets/attrybNavLog.svg"
         />
         <Flex justifyContent={"space-around"} alignItems={"center"}>
           
           <Text
             style={
               current === "addnewdeal"
-                ? { backgroundColor: "green", color: "white" }
+                ? { backgroundColor: "blue", color: "white" }
                 : null
             }
             p={2}
             textAlign={"center"}
             borderRadius={5}
-            _hover={{ bg: "green", color: "white" }}
+            _hover={{ bg: "blue", color: "white" }}
             onClick={() => [nav("/addnewdeal"),setCurrent("addnewdeal")]}
           >
-            New Deal
+            Add Products
           </Text>
           <Text
             style={
               current === "deals"
-                ? { backgroundColor: "green", color: "white" }
+                ? { backgroundColor: "blue", color: "white" }
                 : null
             }
             p={2}
             textAlign={"center"}
             borderRadius={5}
-            _hover={{ bg: "green", color: "white" }}
+            _hover={{ bg: "blue", color: "white" }}
             onClick={() =>[ nav("/deals"),setCurrent("deals")]}
           >
-            All Deals
+            All Products
           </Text>
         </Flex>
 
         <Flex justifyContent={"space-evenly"}>
         <Button
-              colorScheme="green"
+              colorScheme="blue"
               onClick={() => setSearchDrawerOpen(true)}
             >
               <FaSearch />
@@ -103,7 +103,7 @@ const Navbar = () => {
                 </MenuButton>
                 <MenuList>
                   <MenuItem >
-                    <Text color="red" colorScheme="red" onClick={() => handleLogout()}>
+                    <Text color="red" backgroundColor="yellow" colorScheme="blue" onClick={() => handleLogout()}>
                       Logout
                     </Text>
                   </MenuItem>
