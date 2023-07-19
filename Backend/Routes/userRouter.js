@@ -12,6 +12,7 @@ const userRouter = express.Router();
 
 
 userRouter.post("/register", dateLogger, async (req, res) => {
+  
   const { email, password, name } = req.body;
   try {
     let user = await UserModel.find({ email });
