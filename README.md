@@ -32,7 +32,7 @@ Integration of secure authentication mechanisms (e.g., JWT) and encryption proto
 9.  Filter (On the basis of colors)
 10.  Log-out
 
-## After presenting visual representations of the features mentioned above through images.
+## After presenting visual representations of the features mentioned below through images.
 ### Home-Page
 ![Home1](https://github.com/Deepak-25yadav/Attryb/assets/112754831/90513af0-60ad-4579-a475-f20cefca51ae)
 
@@ -74,7 +74,19 @@ Integration of secure authentication mechanisms (e.g., JWT) and encryption proto
 After Log-out showing the status for login
 ![logout2](https://github.com/Deepak-25yadav/Attryb/assets/112754831/36b62bcf-a189-49e2-b1d3-0737b0210b50)
 
- 
+
+
+ ## Installation and Setup to this Application 
+ - Copy to this repository link: https://github.com/Deepak-25yadav/Attryb.git
+ - git clone to the above link
+ - Open vs. code with cloned repo.
+ - npm i  ( for both frontend and backend folder)
+ - npm run server (for backend)
+ - npm run start  ( for frontend)
+ - Congratulations 🥳🥳 successfully you have run the application.
+
+## Conclusion
+The BUYC Corp project aims to revolutionize the second-hand car marketplace by providing a comprehensive platform for dealers to list their inventory and for buyers to conveniently browse and purchase cars. With its user-friendly interface, efficient search functionality, and emphasis on security and reliability, BUYC Corp aims to enhance the overall buying experience for users. By contributing as a full-stack developer, you will play a crucial role in bringing this project to life and making it a success.
 
 
 
