@@ -1,7 +1,7 @@
 # Attryb
 
 ## Project Summary
-BUYC Corp is a marketplace for second-hand cars, providing a platform where car dealers can list their inventory and end consumers can browse and purchase cars. The marketplace leverages the product specifications provided by Original Equipment Manufacturers (OEMs) to enhance the listing process and facilitate the buying experience.
+Attryb is a marketplace for second-hand cars, providing a platform where car dealers can list their inventory and end consumers can browse and purchase cars. The marketplace leverages the product specifications provided by Original Equipment Manufacturers (OEMs) to enhance the listing process and facilitate the buying experience.
 
 ### Front-end Deloyed link: https://attryb-frontend-green.vercel.app/
 
